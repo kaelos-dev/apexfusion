@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.kaelos.apexfusion.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "apexfusion.refmap.json",
+  "client": [
+    "client.GuiMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

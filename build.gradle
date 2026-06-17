@@ -3,6 +3,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0.24,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = mod_version
@@ -48,12 +49,19 @@ minecraft {
     }
 }
 
+mixin {
+    add sourceSets.main, "apexfusion.refmap.json"
+    config "apexfusion.mixins.json"
+}
+
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {}
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 tasks.named('processResources', ProcessResources).configure {
@@ -79,7 +87,8 @@ tasks.named('jar', Jar).configure {
             'Specification-Version'   : '1',
             'Implementation-Title'    : project.name,
             'Implementation-Version'  : project.jar.archiveVersion,
-            'Implementation-Vendor'   : mod_authors
+            'Implementation-Vendor'   : mod_authors,
+            "MixinConfigs"            : "apexfusion.mixins.json"
         ])
     }
 }
