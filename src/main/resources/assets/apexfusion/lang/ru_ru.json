@@ -1,0 +1,13 @@
+{
+  "apexfusion.screen.composer.required_materials": "Материалы",
+
+  "apexfusion.gui.message.enable_visualization": "Визуализация включена",
+  "apexfusion.gui.message.disable_visualization": "Визуализация выключена",
+  "apexfusion.gui.message.no_blueprint_available": "Чертёж отсутствует",
+  "apexfusion.gui.message.successfully_assembled": "Конструкция была успешно собрана",
+  "apexfusion.gui.message.unsuccessfully_assembled": "Не хватает материалов для сборки конструкции ",
+  "apexfusion.gui.message.position_locked": "Позиция заблокирована",
+  "apexfusion.gui.message.position_unlocked": "Позиция разблокирована",
+
+  "key.apexfusion.tool_settings": "Настройки инструмента"
+}

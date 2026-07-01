@@ -1,0 +1,14 @@
+{
+  "apexfusion.screen.composer.required_materials": "Material List",
+
+  "apexfusion.gui.message.enable_visualization": "Visualization is enabled",
+  "apexfusion.gui.message.disable_visualization": "Visualization is disabled",
+  "apexfusion.gui.message.no_blueprint_available": "No blueprint available",
+  "apexfusion.gui.message.successfully_assembled": "The structure has been successfully assembled",
+  "apexfusion.gui.message.unsuccessfully_assembled": "There are not enough materials to assemble the structure",
+  "apexfusion.gui.message.position_locked": "The position is blocked",
+  "apexfusion.gui.message.position_unlocked": "The position has been unlocked",
+
+  "key.categories.apexfusion.general": "Apex Fusion",
+  "key.apexfusion.tool_settings": "Tool Settings"
+}
